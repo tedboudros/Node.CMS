@@ -11,7 +11,7 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/", (req, res) => {
-  res.render("admin");
+  res.render("admin", { head });
 });
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
