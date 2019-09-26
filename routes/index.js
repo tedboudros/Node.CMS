@@ -6,18 +6,18 @@ var head = require("../models/head");
 
 router.get("/:page", (req, res) => {
   head.getHead((err, head) => {
-	if(err) throw err;
-	options.getOptionsByName("menu", (err, menu) => {
-		if (err) throw err;
-		pages.getPageByURL(req.params.page, (err, page) => {
-		if (err) throw err;
-		if (!page) {
-			res.render("stock_404", { head, menu});
-		} else {
-			res.render("stock", { head, menu, text: "hello world" });
-		}
-		});
-	});
+    if (err) throw err;
+    options.getOptionsByName("menu", (err, menu) => {
+      if (err) throw err;
+      pages.getPageByURL(req.params.page, (err, page) => {
+        if (err) throw err;
+        if (!page) {
+          res.render("stock_404", { head, menu });
+        } else {
+          res.render("stock", { head, menu, text: "hello world" });
+        }
+      });
+    });
   });
 });
 
