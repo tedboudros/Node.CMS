@@ -3,7 +3,7 @@ var router = express.Router();
 var options = require("../models/options");
 var pages = require("../models/page");
 var head = require("../models/head");
-
+var stringify = require('himalaya').stringify
 router.get("/:page", (req, res) => {
   head.getHead((err, head) => {
     if (err) throw err;
@@ -14,7 +14,7 @@ router.get("/:page", (req, res) => {
         if (!page) {
           res.render("stock_404", { head, menu });
         } else {
-          res.render("stock", { head, menu, text: "hello world" });
+          res.render("stock", { head, menu, html: stringify(page.html)});
         }
       });
     });

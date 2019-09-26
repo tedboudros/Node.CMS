@@ -6,6 +6,8 @@ var User = require("../models/user");
 
 var head = [
   { name: "Bootstrap_CSS", url: "/css/bootstrap.min.css", css: true },
+  { name: "Popper", url: "/js/popper.min.js", js: true },
+  { name: "JQuery", url: "/js/jquery.min.js", js: true },
   { name: "Bootstrap_JS", url: "/js/bootstrap.min.js", js: true }
 ];
 

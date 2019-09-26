@@ -17,6 +17,7 @@
     "express-handlebars": "^3.1.0",
     "express-session": "^1.16.2",
     "express-validator": "^5.3.1",
+    "himalaya": "^1.1.0",
     "mongoose": "^5.7.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
