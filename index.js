@@ -10,7 +10,7 @@ var session = require('express-session');
 var passport = require('passport');
 
 //Database
-mongoose.connect('mongodb://localhost:27017/nodecms', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://nodecms:nodecms@cluster0-t3vdv.azure.mongodb.net/nodecms', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set('useCreateIndex', true);
 var db = mongoose.connection;
 
