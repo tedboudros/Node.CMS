@@ -14,7 +14,8 @@ router.get("/:page", (req, res) => {
         if (!page) {
           res.render("stock_404", { head, menu });
         } else {
-          res.render("stock", { head, menu, html: stringify(page.html)});
+          var html = stringify(JSON.parse(page.html));
+          res.render("stock", { head, menu, html});
         }
       });
     });

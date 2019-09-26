@@ -3,11 +3,14 @@ var mongoose = require('mongoose');
 // Pages Schema
 var PagesSchema = mongoose.Schema({
     name: {
-		type: String
+		  type: String
     },
     url: {
-        type: String
-	}
+      type: String
+    },
+    html: {
+      type: String
+    }
 });
 
 var Pages = module.exports = mongoose.model('Pages', PagesSchema);
