@@ -16,6 +16,7 @@ var db = mongoose.connection;
 
 //Routes
 var index = require('./routes/index')
+var admin = require('./routes/admin')
 
 //Initialize Express
 var app = express();
@@ -77,7 +78,9 @@ app.use(function (req, res, next) {
 });
 
 //Use routes
+app.use('/admin', admin);
 app.use('/', index);
+
 
 //Start listening
 var http = require("http").Server(app);
