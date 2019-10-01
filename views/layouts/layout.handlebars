@@ -1,14 +1,22 @@
 <head>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nodeCMS</title>
     {{#each head}}
-        {{#if this.css}}
-        <link href="{{this.url}}" rel="stylesheet">
-        {{/if}}
-        {{#if this.js}}
-        <script src="{{this.url}}"></script>
-        {{/if}}
+    {{#if this.css}}
+    <link href="{{this.url}}" rel="stylesheet">
+    {{/if}}
+    {{#if this.js}}
+    <script src="{{this.url}}"></script>
+    {{/if}}
     {{/each}}
 </head>
 
@@ -31,7 +39,7 @@
         </div>
     </nav>
     {{/if}}
-    <div class="content text-dark container-fluid">
+    <div class="content text-dark ">
         {{#if error}}
         <div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;{{error}}</div>
         {{/if}}

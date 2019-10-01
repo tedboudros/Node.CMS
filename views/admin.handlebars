@@ -1,41 +1,166 @@
-<div id="viewport">
-    <!-- Sidebar -->
-    <div class="bg-dark sidebar">
-        <div class="header bg-info p-3 text-center text-light">
-            <div class="h5">Admin</div>
-        </div>
-        <div class="text-light text-left dropright  mt-5">
-            <div class="text-muted pl-2 font-weight-bold">MAIN</div>
-
-            <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Dropright
-                </button>
-                <div class="dropdown-menu">
-                    <!-- Dropdown menu links -->
-                </div>
+<div class="sidebar bg-dark text-light   uk-animation-toggle uk-animation-slide-left" tabindex="0">
+    <div class=" container">
+        <a href='/dashboard' style="text-decoration: none">
+            <p class=" row justify-content-center h3 p-2 text-center border-bottom text-light">Dashboard</p>
+        </a>
+        <div class="row ml-3 text-center">
+            <div class="col-10">
+                <a href="" class="uk-icon-button" uk-icon="desktop"></a>
             </div>
-            <div class="h6 mt-5 pl-4 pt-2 pb-2 menu">Menu 1</div>
-            <div class="h6 mt-5 pl-4 pt-2 pb-2 menu">Menu 1</div>
-            <div class="h6 mt-5 pl-4 pt-2 pb-2 menu">Menu 1</div>
 
         </div>
-
     </div>
 
+    <div class="mt-5 container">
+        <div class="bg-light text-dark text-center menu rounded">
+
+            <div class="uk-card uk-card-body p-2 ">
+                <div class="">
+                    <span uk-icon="icon: code; ratio: 1"></span>
+                    Dashboard
+                </div>
+            </div>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+
+                    <li><a href="/admin">Home</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="/admin/updates">Updates</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="/admin/updates">Webiste</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-light text-dark text-center menu rounded mt-4">
+
+            <div class="uk-card uk-card-body p-2">
+                <div class="">
+                    <span uk-icon="icon: link; ratio: 1"></span>
+                    Intergation
+                </div>
+            </div>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+
+                    <li><a href="#">Pages</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Posts</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Media</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Comments</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-light text-dark text-center menu rounded mt-4">
+
+            <div class="uk-card uk-card-body p-2">
+                <div class="">
+                    <span uk-icon="icon: cart; ratio: 1"></span>
+                    E-Commerce
+                </div>
+            </div>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+
+                    <li><a href="#">Shop</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Products</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Orders</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Configure</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-light text-dark text-center menu rounded mt-4">
+
+            <div class="uk-card uk-card-body p-2">
+                <div class="">
+                    <span uk-icon="icon: paint-bucket; ratio: 1"></span>
+                    Appearance
+                </div>
+            </div>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+
+                    <li><a href="#">Customize</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Menus</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Templates</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Widgets</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-light text-dark text-center menu rounded mt-4">
+
+            <div class="uk-card uk-card-body p-2">
+                <div class="">
+                    <span uk-icon="icon:  world; ratio: 1"></span>
+                    SEO Configure
+                </div>
+            </div>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+
+                    <li><a href="#">Settings</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Search Appearance</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Social</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">SEO pages</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-light text-dark text-center menu rounded mt-4">
+
+            <div class="uk-card uk-card-body p-2">
+                <div class="">
+                    <span uk-icon="icon: settings; ratio: 1"></span>
+                    Settings
+                </div>
+            </div>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+
+                    <li><a href="#">User</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Permalinks</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-    <style>
-        .sidebar {
-            position: fixed;
-            left: 14vw;
-            width: 14vw;
-            height: 100%;
-            margin-left: -14vw;
-        }
 
-        .menu:hover {
-            background: rgba(187, 186, 186, 0.171)
-        }
-    </style>
+<style>
+    .sidebar {
+        position: fixed;
+        width: 230px;
+        height: 100%;
+        z-index: 1000;
+        display: block;
+    }
+
+    .menu:hover {
+        webkit-box-shadow: 0px 0px 30px 2px rgba(255, 255, 255, 0.26);
+        -moz-box-shadow: 0px 0px 30px 2px rgba(255, 255, 255, 0.26);
+        box-shadow: 0px 0px 30px 2px rgba(255, 255, 255, 0.26);
+        cursor: pointer
+    }
+</style>
