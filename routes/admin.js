@@ -29,12 +29,13 @@ router.post(
   }
 );
 
+// GET ROUTES
 router.get("/login", (req, res) => {
   res.render("login", { head });
 });
 
 router.get("/", ensureAuthenticated, (req, res) => {
-  res.render("admin", { head });
+  res.render("menus/home", { head });
 });
 
 function createUser(name, username, password, callback) {
