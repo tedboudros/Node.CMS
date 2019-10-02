@@ -29,7 +29,7 @@ router.post(
   }
 );
 
-// GET ROUTES
+// GET ROUTES //
 router.get("/login", (req, res) => {
   res.render("login", { head });
 });
@@ -38,6 +38,12 @@ router.get("/", ensureAuthenticated, (req, res) => {
   res.render("menus/home", { head });
 });
 
+// Dashoboard Menu //
+router.get("/updates", ensureAuthenticated, (req, res) => {
+  res.render("dashboard/updates", { head });
+});
+
+// create user //
 function createUser(name, username, password, callback) {
   var newUser = User({
     username,

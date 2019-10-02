@@ -1,4 +1,4 @@
-<div>
+<div class="bg-light">
     {{>admin }}
 
     <div class="uk-container uk-container-medium page">
@@ -6,7 +6,7 @@
         <div class="mt-5 uk-grid-match uk-child-width" uk-grid>
 
             <!-- Dashboard Card -->
-            <div class="uk-card-secondary uk-card-body uk-card-hover rounded" uk-tooltip="Dashboard">
+            <div class="uk-card-primary uk-card-body uk-card-hover rounded" uk-tooltip="Dashboard">
                 <div uk-grid>
                     <div class="uk-width-large uk-height-small">
                         <p class="uk-card-title">Dashboard</p>
@@ -15,7 +15,7 @@
                     <div class="">
                         <div>
                             <span class="uk-margin-small-right uk-text-emphasis" uk-icon="rss"></span>
-                            <a>Check for updates</a>
+                            <a href='/admin/updates'>Check for updates</a>
                         </div>
                         <br>
                         <div>
@@ -28,11 +28,22 @@
                             <a>Check your website</a>
                         </div>
                     </div>
+
+                    <div>
+                        <form>
+                            <div class="uk-margin">
+                                <input class="uk-input uk-width-large@l" type="text" placeholder="Website title">
+                            </div>
+                            <button class="uk-button-default uk-align-right">Update Title</button>
+
+                        </form>
+                    </div>
+
                 </div>
             </div>
 
             <!-- Intergation Card -->
-            <div class="uk-card-secondary uk-card-body uk-card-hover rounded" uk-tooltip="Intergation">
+            <div class="uk-card-default uk-card-body uk-card-hover rounded" uk-tooltip="Intergation">
                 <div uk-grid>
                     <div class="uk-width-large uk-height-small">
                         <p class="uk-card-title">Intergation</p>
@@ -73,7 +84,7 @@
             </div>
 
             <!-- E-Commerce Card -->
-            <div class="uk-card-secondary uk-card-body uk-card-hover rounded" uk-tooltip="Intergation">
+            <div class="uk-card-primary uk-card-body uk-card-hover rounded" uk-tooltip="E-Commerce">
                 <div uk-grid>
                     <div class="uk-width-large uk-height-small">
                         <p class="uk-card-title">E-Commerce</p>
@@ -83,28 +94,28 @@
                         <div class="col">
                             <div>
                                 <span class="uk-margin-small-right uk-text-emphasis" uk-icon="file"></span>
-                                <a>Pages</a>
+                                <a>Dashboard</a>
                             </div>
                             <br>
                             <div>
-                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: file-text"></span>
-                                <a>Posts</a>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: move"></span>
+                                <a>Products</a>
                             </div>
                             <br>
                             <div>
-                                <span class=" uk-margin-small-right uk-text-emphasis" uk-icon="social"></span>
-                                <a>Media</a>
+                                <span class=" uk-margin-small-right uk-text-emphasis" uk-icon="list"></span>
+                                <a>Orders</a>
                             </div>
                         </div>
                         <div class="col">
                             <div>
-                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="comments"></span>
-                                <a>Comments</a>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="grid"></span>
+                                <a>Status</a>
                             </div>
                             <br>
                             <div>
-                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: receiver"></span>
-                                <a>Contact</a>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: cog"></span>
+                                <a>Settings</a>
                             </div>
                             <br>
 
@@ -112,6 +123,83 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Appearance Card -->
+            <div class="uk-card-default uk-card-body uk-card-hover rounded" uk-tooltip="Appearance">
+                <div uk-grid>
+                    <div class="uk-width-large uk-height-small">
+                        <p class="uk-card-title">Appearance</p>
+                        <p>Customize the things you want</p>
+                    </div>
+                    <div class="row uk-width-large">
+                        <div class="col">
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="pencil"></span>
+                                <a>Customize</a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: menu"></span>
+                                <a>Menus</a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class=" uk-margin-small-right uk-text-emphasis" uk-icon="more-vertical"></span>
+                                <a>Widgets</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="strikethrough"></span>
+                                <a>Fonts</a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: cog"></span>
+                                <a>Settings</a>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Card -->
+            <div class="uk-card-primary uk-card-body uk-card-hover rounded mb-5" uk-tooltip="SEO configuration">
+                <div uk-grid>
+                    <div class="uk-width-large uk-height-small">
+                        <p class="uk-card-title">SEO configuration</p>
+                        <p>Customize the things you want</p>
+                    </div>
+                    <div class="row uk-width-large">
+                        <div class="col">
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="search"></span>
+                                <a>Search Appearance</a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: social"></span>
+                                <a>Social</a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class=" uk-margin-small-right uk-text-emphasis" uk-icon="file"></span>
+                                <a>SEO Pages</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="cog"></span>
+                                <a>settings</a>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>

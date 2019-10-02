@@ -1,0 +1,79 @@
+<div class="bg-light">
+    {{>admin }}
+
+    <div class="uk-container uk-container-medium page">
+        <div class=" mt-5 uk-text-large">Updates</div>
+        <div class="mt-5 uk-grid-match uk-child-width" uk-grid>
+
+            <!-- Updates Card -->
+            <div class="uk-card-primary uk-card-body uk-card-hover rounded uk-width-large" uk-tooltip="Modules Update">
+                <div uk-grid>
+                    <div>
+                        <form>
+                            {{#if updated}}
+                            <label class="uk-class-label">You have no updates to do</label>
+                            {{else}}
+                            <div class="uk-class-label uk-text-large uk-text-emphasis">You have some updated to do</div>
+                            {{/if}}
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Specific module update">
+                            </div>
+                            <button class="uk-button-default">Update module</button>
+                            <button class="uk-button-default">Update all modules </button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="uk-text-large pl-0">
+                You can check your site settings here
+            </div>
+
+            <!-- Settings Card -->
+            <div class="uk-card-primary uk-card-body uk-card-hover rounded mb-5" uk-tooltip="Settings">
+                <div uk-grid>
+                    <div class="uk-width-large uk-height-small">
+                        <p class="uk-card-title">Site configuration</p>
+                        <p>Customize your website</p>
+                    </div>
+                    <div class="row uk-width-large">
+                        <div class="col">
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="user"></span>
+                                <a>User</a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="icon: database"></span>
+                                <a>Modules </a>
+                            </div>
+                            <br>
+                            <div>
+                                <span class=" uk-margin-small-right uk-text-emphasis" uk-icon="git-fork"></span>
+                                <a>Permalinks</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <span class="uk-margin-small-right uk-text-emphasis" uk-icon="warning"></span>
+                                <a>Privacy</a>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .page {
+        position: absolute;
+        left: 360px;
+    }
+</style>
