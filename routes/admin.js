@@ -33,12 +33,17 @@ router.post(
 router.get("/login", (req, res) => {
   res.render("login", { head });
 });
-
+//menus
 router.get("/", ensureAuthenticated, (req, res) => {
-  res.render("menus/home", { head });
+  res.render("home", { head });
 });
-
-// Dashoboard Menu //
+router.get("/pages", ensureAuthenticated, (req, res) => {
+  res.render("intergation/pages", { head });
+});
+router.get("/post", ensureAuthenticated, (req, res) => {
+  res.render("/intergation/posts", { head });
+});
+// sub Menu //
 router.get("/updates", ensureAuthenticated, (req, res) => {
   res.render("dashboard/updates", { head });
 });
